@@ -1,2 +1,2 @@
 # JTCode
-Learn code, this source using NextJS + Typescript
+Learn code, this source using NextJS + Typescript!
