@@ -1,0 +1,134 @@
+.bk__cov19 {
+  margin: auto;
+  padding: 1rem 2rem;
+
+  .type-sort {
+    display: flex;
+
+    div {
+      cursor: pointer;
+      margin-right: 1rem;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .active {
+      border-bottom: 3px solid white;
+    }
+  }
+
+  .list-country {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 16px;
+
+    .item {
+      cursor: pointer;
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid white;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      .title {
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .sub-title {
+        width: 60%;
+      }
+
+      .last-item {
+        margin-bottom: unset;
+      }
+      
+      & > div {
+        width: 40%;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .error-img {
+    margin: auto;
+    
+    img {
+      padding-top: 2rem;
+      width: 100%;
+      height: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+  .country-detail {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      max-width: 100%;
+      margin-right: unset;
+      margin-bottom: 2rem;
+    }
+
+    .detail {
+      font-size: 20px;
+      
+      & > div {
+        padding-bottom: 12px;
+
+        &:last-child {
+          padding-bottom: unset;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 426px) {
+    padding: 2rem 4rem;
+
+    .list-country {
+      .item {
+        width: 48%;
+        margin-right: 2%;
+      }
+    }
+
+    .country-detail {
+      img {
+        max-width: 10rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 3rem 6rem;
+
+    .list-country {
+      .item {
+        width: 30%;
+        margin-right: 3%;
+      }
+    }
+
+    .country-detail {
+      flex-wrap: nowrap;
+
+      img {
+        margin-right: 2rem;
+        max-width: 20rem;
+      }
+    }
+  }
+}
