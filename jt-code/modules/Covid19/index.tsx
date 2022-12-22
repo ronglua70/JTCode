@@ -80,7 +80,7 @@ const Covid19 = (props: Props) => {
   };
 
   const handleRenderItem = () => {
-    const dataRender = handleSortCountry(dataCov19?.Countries || [],typeSort)?.slice(0,11);
+    const dataRender = handleSortCountry(dataCov19?.Countries || [], typeSort)?.slice(0,11);
 
     return dataRender?.length === 0 ? 
     <div className='error-img'>
